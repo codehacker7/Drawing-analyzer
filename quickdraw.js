@@ -1,13 +1,6 @@
 const QuickDraw = new function () {
     const URL = 'https://inputtools.google.com/request?ime=handwriting&app=quickdraw&dbg=1&cs=1&oe=UTF-8';
     const OPTIONS = document.getElementById('options');
-    let pratham = prompt("ML Scientist Pratham Bansal How old are you?? ");
-    if (pratham > 18 && pratham < 30) {
-        alert("You are too yount to be a scientist");
-        alert("YOU ARE ONLY " + pratham + " years old");
-    } else {
-        alert("You are " + pratham + " years old");
-    }
     this.search = function (width, height, ink) {
         console.debug("Searching: " + width + "x" + height);
         console.debug(ink);
